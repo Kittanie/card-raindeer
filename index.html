@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Render Card #1</title>
+
+    <!-- core CSS -->
+
+    <link href="css/cardrender.css" rel="stylesheet">
+ 
+    
+
+  </head>
+
+  <body>
+ 
+    
+
+     
+       <form name="cardForm">
+            <input type="text" id="suitList" value="hearts"/>
+       </form>
+
+       <form name="cardForm">
+            <input type="text" id="numList" value="6"/>
+       </form>
+      
+      <div id="button">Cards!!</div>
+      
+      <img src="" id="img">
+
+    
+     <script src="js/jquery.2.1.1.js"></script>
+     <script src="build/build.js"></script>
+   
+    <script type="text/javascript">  
+
+    /* Jquery Code Here */
+
+    var raindeer = require("card-raindeer")
+
+
+
+      $('#button').click(function(){
+
+
+
+        var suit = $('#suitList').val()
+        var num = $('#numList').val()
+        
+        var src =raindeer(suit,num)
+
+
+        console.log(src)
+
+
+        $('#img').attr('src', src)
+
+
+
+      })
+
+   </script>
+   
+  </body>
+</html>
