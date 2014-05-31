@@ -1,5 +1,5 @@
 #card-raindeer
-=============
+
 
 Basic component to render card onto screen.
 
@@ -11,6 +11,8 @@ component
 ```
 $ component install kitto1/card-raindeer
 ```
+
+build folder for images & build.js
 ```
 $ component build -c
 ```
