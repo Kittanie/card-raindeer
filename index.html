@@ -43,25 +43,20 @@
 
     /* Jquery Code Here */
 
-    var raindeer = require("card-raindeer")
-
-
+    var Factory = require("card-raindeer")
+    var raindeer = Factory("build/")
+    
 
       $('#button').click(function(){
 
 
-
         var suit = $('#suitList').val()
+
         var num = $('#numList').val()
         
-        var src =raindeer(suit,num)
-
-
-        console.log(src)
-
+        var src = Factory(suit,num)
 
         $('#img').attr('src', src)
-
 
 
       })
